@@ -1,67 +1,49 @@
-<!DOCTYPE html>
-<html lang="ko">
+<header class="gallery-header">
+    <nav class="top-nav">
+        <a href="https://myoseon.kr" class="home-link">Home</a>
+    </nav>
+    <h1 class="gallery-title">Myoseon's Art</h1>
+    <p class="gallery-subtitle">색채로 전하는 이야기</p>
+</header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myoseon Art Gallery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-    <div class="sunlight-overlay"></div>
-
-    <header class="gallery-header">
-        <nav class="top-nav">
-            <a href="https://myoseon.kr" class="home-link">Home</a>
-        </nav>
-        <h1 class="gallery-title">Myoseon's Art</h1>
-        <p class="gallery-subtitle">색채로 전하는 이야기</p>
-    </header>
-
-    <main class="gallery-container">
-        <div class="art-grid">
-            <div class="art-item" onclick="openModal('assets/images/painting1.png', '고요한 아침', 'Oil on Canvas, 2024')">
-                <img src="assets/images/painting1.png" alt="Painting 1">
-                <div class="art-info">
-                    <h3>고요한 아침</h3>
-                    <p>Oil on Canvas</p>
-                </div>
-            </div>
-            <div class="art-item" onclick="openModal('assets/images/painting2.png', '겨울의 기억', 'Acrylic on Wood, 2024')">
-                <img src="assets/images/painting2.png" alt="Painting 2">
-                <div class="art-info">
-                    <h3>겨울의 기억</h3>
-                    <p>Acrylic on Wood</p>
-                </div>
-            </div>
-            <div class="art-item" onclick="openModal('assets/images/painting3.png', '오후의 정물', 'Watercolor, 2024')">
-                <img src="assets/images/painting3.png" alt="Painting 3">
-                <div class="art-info">
-                    <h3>오후의 정물</h3>
-                    <p>Watercolor</p>
-                </div>
+<main class="gallery-container">
+    <div class="art-grid">
+        <div class="art-item" onclick="openModal('assets/images/painting1.png', '고요한 아침', 'Oil on Canvas, 2024')">
+            <img src="assets/images/painting1.png" alt="Painting 1">
+            <div class="art-info">
+                <h3>고요한 아침</h3>
+                <p>Oil on Canvas</p>
             </div>
         </div>
-    </main>
-
-    <div id="image-modal" class="modal" hidden>
-        <div class="modal-content">
-            <button class="close-btn" onclick="closeModal()">&times;</button>
-            <img id="modal-image" src="" alt="">
-            <div class="modal-info">
-                <h2 id="modal-title"></h2>
-                <p id="modal-desc"></p>
+        <div class="art-item" onclick="openModal('assets/images/painting2.png', '겨울의 기억', 'Acrylic on Wood, 2024')">
+            <img src="assets/images/painting2.png" alt="Painting 2">
+            <div class="art-info">
+                <h3>겨울의 기억</h3>
+                <p>Acrylic on Wood</p>
+            </div>
+        </div>
+        <div class="art-item" onclick="openModal('assets/images/painting3.png', '오후의 정물', 'Watercolor, 2024')">
+            <img src="assets/images/painting3.png" alt="Painting 3">
+            <div class="art-info">
+                <h3>오후의 정물</h3>
+                <p>Watercolor</p>
             </div>
         </div>
     </div>
+</main>
 
-    <script src="assets/js/main.js"></script>
+<div id="image-modal" class="modal" hidden>
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <img id="modal-image" src="" alt="">
+        <div class="modal-info">
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
