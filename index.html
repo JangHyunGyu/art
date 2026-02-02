@@ -43,25 +43,25 @@
 
     <main class="gallery-container">
         <div class="art-grid">
-            <div class="art-item" onclick="openModal('assets/images/painting1.png', '고요한 아침', 'Oil on Canvas, 2024')">
-                <img src="assets/images/painting1.png" alt="Painting 1">
+            <div class="art-item" data-id="painting1">
+                <img src="assets/images/painting1.png" alt="금강내산전도 모작">
                 <div class="art-info">
-                    <h3>고요한 아침</h3>
-                    <p>Oil on Canvas</p>
+                    <h3>금강내산전도</h3>
+                    <p>수묵담채 모작, 2023–2024</p>
                 </div>
             </div>
-            <div class="art-item" onclick="openModal('assets/images/painting2.png', '겨울의 기억', 'Acrylic on Wood, 2024')">
-                <img src="assets/images/painting2.png" alt="Painting 2">
+            <div class="art-item" data-id="painting2">
+                <img src="assets/images/painting2.png" alt="겨울의 기억">
                 <div class="art-info">
                     <h3>겨울의 기억</h3>
-                    <p>Acrylic on Wood</p>
+                    <p>Acrylic on Wood, 2024</p>
                 </div>
             </div>
-            <div class="art-item" onclick="openModal('assets/images/painting3.png', '오후의 정물', 'Watercolor, 2024')">
-                <img src="assets/images/painting3.png" alt="Painting 3">
+            <div class="art-item" data-id="painting3">
+                <img src="assets/images/painting3.png" alt="오후의 정물">
                 <div class="art-info">
                     <h3>오후의 정물</h3>
-                    <p>Watercolor</p>
+                    <p>Watercolor, 2024</p>
                 </div>
             </div>
         </div>
@@ -74,6 +74,7 @@
             <div class="modal-info">
                 <h2 id="modal-title"></h2>
                 <p id="modal-desc"></p>
+                <div id="modal-detail" class="modal-detail"></div>
             </div>
         </div>
     </div>
