@@ -267,6 +267,42 @@ body {
     border-color: rgba(100, 100, 100, 0.5);
 }
 
+/* 전체화면 이미지 오버레이 */
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.fullscreen-overlay:not([hidden]) {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fullscreen-overlay img {
+    max-width: 98vw;
+    max-height: 98vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* 모달 이미지 클릭 가능 표시 */
+#modal-image {
+    cursor: zoom-in;
+}
+
 @media (max-width: 768px) {
     .gallery-title {
         font-size: 2.5rem;

@@ -70,13 +70,18 @@
     <div id="image-modal" class="modal" hidden>
         <div class="modal-content">
             <button class="close-btn" onclick="closeModal()">&times;</button>
-            <img id="modal-image" src="" alt="">
+            <img id="modal-image" src="" alt="" title="클릭하면 전체화면으로 보기">
             <div class="modal-info">
                 <h2 id="modal-title"></h2>
                 <p id="modal-desc"></p>
                 <div id="modal-detail" class="modal-detail"></div>
             </div>
         </div>
+    </div>
+
+    <!-- 전체화면 이미지 오버레이 -->
+    <div id="fullscreen-overlay" class="fullscreen-overlay" hidden>
+        <img id="fullscreen-image" src="" alt="">
     </div>
 
     <script src="assets/js/main.js"></script>

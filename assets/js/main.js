@@ -61,6 +61,21 @@ function closeModal() {
     document.body.style.overflow = '';
 }
 
+// 전체화면 이미지 열기
+function openFullscreen(imageSrc) {
+    const overlay = document.getElementById('fullscreen-overlay');
+    const fullscreenImg = document.getElementById('fullscreen-image');
+    
+    fullscreenImg.src = imageSrc;
+    overlay.hidden = false;
+}
+
+// 전체화면 닫기
+function closeFullscreen() {
+    const overlay = document.getElementById('fullscreen-overlay');
+    overlay.hidden = true;
+}
+
 // DOM 로드 후 이벤트 연결
 document.addEventListener('DOMContentLoaded', function() {
     // Close modal when clicking outside
@@ -74,4 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.art-item[data-id]').forEach(item => {
         item.addEventListener('click', () => openModal(item.dataset.id));
     });
+
+    // 모달 이미지 클릭 시 전체화면
+    document.getElementById('modal-image').addEventListener('click', function() {
+        openFullscreen(this.src);
+    });
+
+    // 전체화면 클릭 시 닫기
+    document.getElementById('fullscreen-overlay').addEventListener('click', closeFullscreen);
 });
