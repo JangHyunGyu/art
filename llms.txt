@@ -1,0 +1,23 @@
+# Myoseon Art Gallery
+> Korean art gallery by Myoseon, featuring emotional paintings, oil-style works, watercolor, acrylic, and visual storytelling.
+
+## About
+Myoseon Art Gallery is a personal online gallery for Myoseon's visual artwork. The site presents paintings and emotional gallery pieces with a quiet, reflective tone.
+
+## Features
+- Online art gallery
+- Painting and illustration showcase
+- Emotional visual storytelling
+- Korean-language gallery experience
+- Connected to the broader Myoseon creative sites
+
+## Links
+- Gallery: https://art.myoseon.kr/
+- Main Myoseon site: https://myoseon.kr/
+- Sitemap: https://art.myoseon.kr/sitemap.xml
+
+## Language
+- Korean (한국어)
+
+## Category
+Art Gallery, Painting, Illustration, Emotional Artwork, Myoseon
