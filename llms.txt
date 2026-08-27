@@ -13,6 +13,8 @@ Myoseon Art Gallery is a personal online gallery for Myoseon's visual artwork. T
 
 ## Links
 - Gallery: https://art.myoseon.kr/
+- Online art exhibition guide: https://art.myoseon.kr/seo/online-art-exhibition.html
+- Painting medium guide: https://art.myoseon.kr/seo/painting-medium-guide.html
 - Main Myoseon site: https://myoseon.kr/
 - Sitemap: https://art.myoseon.kr/sitemap.xml
 
